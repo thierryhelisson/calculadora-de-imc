@@ -1,57 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-span{
+span {
     color: red;
 }
 
-header{
+header {
     background-color: rgb(197, 136, 128);
+    padding: 1em;
 }
-body{
-    display: block;
-    width: auto;
-    height: auto;
-}
-main{
+
+main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-button{
+b {
     background-color: rgb(0, 35, 65);
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
     border: 0;
+    box-sizing: border-box;
 }
-button:hover{
+
+b:hover {
     background-color: rgb(83, 0, 238);
 }
 
-.form{
-    margin-left: 2em;
+.form,
+.resultado {
+    margin: 0.5em;
     padding: 1em;
-    width: auto;
-    height: auto;
+    width: 100%;
     text-align: center;
     border-radius: 1em;
-    background-color: rgb(59, 7, 156);
     box-shadow: 1px 1px 5px;
+    box-sizing: border-box;
+    background-color: blueviolet;
 }
 
-.resultado{
-    margin-right: 2em;
-    padding: 1em;
-    width: auto;
-    height: auto;
-    text-align: center;
-    border-radius: 1em;
-    background-color: rgb(149, 42, 199);
-    box-shadow: 1px 1px 5px;
+@media (min-width: 768px) {
+    b,
+    .form,
+    .resultado {
+        width: 48%;
+    }
 }
